@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
         WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("email")));
         emailField.sendKeys("oupabrilliant@outlook.com");
 
-        WebElement retrievePasswordButton = driver.findElement(By.id("form_submit"));
+        WebElement retrievePasswordButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("form_submit")));
         retrievePasswordButton.click();
 
         WebElement confirmationMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("h1")));

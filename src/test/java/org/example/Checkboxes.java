@@ -25,8 +25,7 @@ class checkboxes extends DriverSetup {
                 checkbox.click();
             }
             // Verify the checkbox is checked
-            assertTrue(checkbox.isSelected(), "Checkbox should be checked");
-
+            assertTrue(checkbox.isSelected(), "Checkbox is checked");
         }
     }
 }

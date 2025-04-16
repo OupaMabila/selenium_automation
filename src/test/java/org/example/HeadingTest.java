@@ -25,8 +25,5 @@ public class HeadingTest extends DriverSetup {
         // Assert that the heading text matches
         assertEquals("Welcome to the-internet0", headingText, "Heading does not match!");
     }
-
-
-
-    }
+}
 
